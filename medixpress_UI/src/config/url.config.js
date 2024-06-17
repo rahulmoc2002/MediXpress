@@ -1,0 +1,1 @@
+export const accounturl="http://localhost:8081/api/Accounts/"

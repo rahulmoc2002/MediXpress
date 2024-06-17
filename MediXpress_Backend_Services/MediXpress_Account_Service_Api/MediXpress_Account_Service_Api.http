@@ -1,0 +1,6 @@
+@MediXpress_Account_Service_Api_HostAddress = http://localhost:5217
+
+GET {{MediXpress_Account_Service_Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

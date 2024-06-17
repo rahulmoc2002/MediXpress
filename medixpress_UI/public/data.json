@@ -1,0 +1,93 @@
+{
+  "users": [
+    {
+      "id": "04e5",
+      "email": "rahul@gmail.com",
+      "password": "r123",
+      "text": "Purigilla"
+    },
+    {
+      "id": "46d0",
+      "email": "kitiwari@teksystems.com",
+      "password": "k123",
+      "text": "Tiwari"
+    },
+    {
+      "id": "349c",
+      "firstName": "Kishan",
+      "lastName": "Tiwari",
+      "email": "tiwarikishan6474@gmail.com",
+      "password": "k123"
+    },
+    {
+      "id": "94dd",
+      "firstName": "Kishan",
+      "lastName": "Tiwari",
+      "email": "tiwarikishan6474@gmail.com",
+      "password": "k1234"
+    },
+    {
+      "id": "e196",
+      "firstName": "1",
+      "lastName": "1",
+      "email": "11@gmail.com",
+      "password": "1"
+    },
+    {
+      "id": "574b",
+      "firstName": "Kishan",
+      "lastName": "Tiwari",
+      "email": "kt@gmail.com",
+      "password": "Kishan@123",
+      "role": "buyer"
+    },
+    {
+      "id": "ccbd",
+      "firstName": "R",
+      "lastName": "M",
+      "email": "admin@gmail.com",
+      "password": "Rrr456#24",
+      "role": "buyer"
+    },
+    {
+      "id": "c8c6",
+      "firstName": "Rahul",
+      "lastName": "Purigilla",
+      "email": "ra@gmail.com",
+      "password": "Rrr456#24",
+      "role": "buyer",
+      "pharmacyName": "weg",
+      "licenseNumber": "758584",
+      "address": "fdijgdli",
+      "city": "vhjhj",
+      "state": "dfdf",
+      "postalCode": "789",
+      "phone": "9247713237"
+    },
+    {
+      "id": "9b3b",
+      "firstName": "R",
+      "lastName": "M",
+      "email": "admin@gmail.com",
+      "password": "Rrr456#24",
+      "role": "buyer"
+    }
+  ],
+  "sellers": [
+    {
+      "id": "6b73",
+      "firstName": "iure",
+      "lastName": "fiufr",
+      "email": "fhifhghg@gmail.com",
+      "password": "Rrr456#24",
+      "pharmacyName": "rtyui",
+      "licenseNumber": "4567",
+      "address": "yjuk",
+      "city": "ui",
+      "state": "yuirkd",
+      "postalCode": "678",
+      "phone": "9247713237",
+      "role": "seller"
+    }
+  ]
+}

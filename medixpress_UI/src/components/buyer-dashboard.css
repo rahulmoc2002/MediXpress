@@ -1,0 +1,231 @@
+.bd-card-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px; 
+  padding: 20px;
+}
+
+.bd-card-item {
+  flex: 0 0 auto;
+}
+
+.bd-card-custom {
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  background-color: #ffffff;
+  position: relative;
+}
+
+
+.bd-card-custom:hover {
+  transform: translateY(-5px);
+}
+
+.bd-med-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+
+
+
+.bd-add-to-cart-button {
+  margin-top: 20px;
+  display: block;
+  width: 90%;
+  padding: 10px;
+  background: linear-gradient(90deg, #ff6347, #4169e1, #ff6347, #4169e1, #ff6347);
+  background-size: 300% 100%;
+  animation: wave 10s linear infinite;
+  z-index: 0;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+
+
+.bd-message {
+
+
+  position: fixed;
+  top: 10%;
+  right: 10%;
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  transition: opacity 0.5s ease;
+}
+
+.bd-med-image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.bd-discount-tag {
+  position: absolute;
+  
+  left: 0px;
+  background-color: #ff6347;
+  color: white;
+  padding: 5px 10px;
+  font-size: 0.9em;
+  border-radius: 5px;
+}
+
+.bd-med-cost-on-image {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 5px 10px;
+  font-size: 0.9em;
+  border-radius: 5px;
+}
+
+
+
+.bd-med-pharmacy-name{
+  margin-top: 5px;
+  margin-bottom: 50px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  color: black;
+  border: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  cursor: pointer;
+  bottom: 10px;
+font-weight: 700  ;
+font-style: italic;
+}
+
+.bd-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 80%;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 9999;
+}
+
+.bd-popup-content {
+  color: #fff;
+}
+
+.bd-popup h4 {
+  margin-bottom: 10px;
+}
+
+.bd-popup p {
+  margin-bottom: 20px;
+}
+
+.bd-close-popup {
+  background-color: #fff;
+  color: #333;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
+.bd-view-details-button {
+  position: absolute;
+  bottom: 0px; 
+
+  background-color: #329434; 
+  color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.bd-view-details-button:hover {
+  background-color: #15b71e; 
+}
+.icon-button {
+  background: none;
+  border: none;
+  color: #000;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+.thin-bar {
+  padding: 10px 0;
+  height: 68px;
+  background: linear-gradient(90deg, #ff6347, #4169e1, #ff6347, #4169e1, #ff6347);
+  background-size: 300% 100%;
+  animation: wave 10s linear infinite;
+  z-index: 0; 
+  color: white;
+  box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.3), 0px -10px 10px -5px rgba(0, 0, 0, 0.3);
+}
+
+.promo-code-text {
+  color: white;
+  padding: 2px;
+  border-radius: 10px;
+  font-size: 1.6rem;
+
+
+}
+
+.notification-text {
+  color: white;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.notification-icon {
+  font-size: 1.5rem;
+}
+
+.cart-text {
+  background-color: white;
+  color: black;
+  height: 40px;
+  width: 80px;
+  border-radius: 10px;
+  border: 3px solid #613385;
+}
+.search-input {
+  width: 1px; 
+}
+.dash-text{
+  width: 160px;
+  margin-right: 10px;
+  color: black;
+  height: 40px;
+  border-radius: 10px;
+  border: 3px solid #613385;
+}
+
+
+

@@ -1,0 +1,107 @@
+
+
+.banner-container {
+    width: 100%;
+    height: 500px; 
+    position: relative;
+    overflow: hidden; }
+
+.top-half {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(60% + (tan(20deg) * 50vw));
+    background: linear-gradient(90deg, #ff6347, #4169e1, #ff6347, #4169e1, #ff6347); /* Default gradient */
+    background-size: 300% 100%; 
+    animation: wave 10s linear infinite; 
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    color: white;
+    text-align: left; 
+    padding-left: 20px; 
+}
+
+@keyframes wave {
+    0% { background-position: 0 50%; } 
+    50% { background-position: 100% 50%; } 
+    100% { background-position: 0 50%; } 
+}
+
+.banner-text {
+    max-width: 800px;
+}
+
+.banner-text h1 {
+    font-size: 3.5em; /* Further increased font size */
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    line-height: 1.2; /* Adjust line height */
+    margin-bottom: 20px; /* Reduced margin */
+    margin-left: 20px;
+}
+
+.explore-button {
+    margin-left: 25px;
+    margin-bottom: 100px;
+    padding: 0.3em 1em; 
+    font-size: 1.2em; 
+    color: #fff;
+    background-color: #613385;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.explore-button:hover {
+    background-color: #400c68;
+}
+
+.delivery-image {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 350px; 
+    height: auto; 
+    margin-right: 150px;
+    z-index: 1; 
+}
+
+
+
+
+.bottom-half {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #613385;
+    height: 30%; 
+    transform: skewY(-16deg) translateY(-16%); 
+    transform-origin: top; 
+}
+
+.bottom-half-one {
+    position: absolute;
+    bottom: -40%;
+    left: 0;
+    background-color: #613385;
+    width: 100%;
+    height: 50%; /* Adjusted height */
+    transform: skewY(-11deg) translateY(-30%); /* Adjust the skew angle and translateY value as needed */
+    transform-origin: top; /* Skew from the top */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .banner-text h1 {
+        font-size: 3em;
+    }
+
+    .banner-text p {
+        font-size: 1.5em;
+    }
+}

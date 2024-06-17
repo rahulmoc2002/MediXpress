@@ -1,0 +1,125 @@
+.checkout-container {
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+  max-width: 800px;
+  background-color: #f1f3f6;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.order-summary, .shipping-form {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.order-summary h2, .shipping-form h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.order-summary ul {
+  list-style: none;
+  padding: 0;
+}
+
+.order-summary li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.order-summary li img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.item-details {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.total-box {
+  border-top: 1px solid #e0e0e0;
+  padding-top: 10px;
+  margin-top: 20px;
+}
+
+.shipping-form form {
+  max-width: 400px;
+}
+
+.shipping-form button {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.checkout-button {
+  background-color: #fb641b;
+  border: none;
+}
+
+.checkout-button:hover {
+  background-color: #f57224;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .checkout-container {
+    padding: 10px;
+  }
+
+  .order-summary, .shipping-form {
+    padding: 10px;
+  }
+
+  .order-summary h2, .shipping-form h2 {
+    font-size: 1.25rem;
+  }
+
+  .total-box {
+    padding: 10px;
+  }
+}
+
+.checkout-page {
+  position: relative;
+}
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border-left-color: #613385;
+  animation: spin 1s ease infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.thin-bar.loading, .checkout-content.loading {
+  opacity: 0.5;
+  pointer-events: none;
+}

@@ -1,0 +1,6 @@
+@MediXpress_Backend_Services_API_Gateway_HostAddress = http://localhost:5242
+
+GET {{MediXpress_Backend_Services_API_Gateway_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

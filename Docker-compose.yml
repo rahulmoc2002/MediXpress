@@ -1,0 +1,82 @@
+version: '3.6'
+
+services:
+  SqlServer:
+    container_name: SqlServerContainer
+    image: mcr.microsoft.com/mssql/server:2017-latest
+    ports:
+      - 8008:1433
+    environment:
+      - ACCEPT_EULA=Y
+      -MSSQL_SA-PASSWORD=Passw0rd
+    
+  AccountService:
+    container_name: account_service_c
+    image: account_service_i
+    build: 
+        context: .
+        dockerfile: ./MediXpress_Backend_Services/MediXpress_Account_Service_Api/Dockerfile
+    depends_on: 
+        - SqlServer
+    port:
+    - "8001:5002"
+
+  MedicineService:
+    container_name: medicine_service_c
+    image: medicine_service_i
+    build: 
+        context: .
+        dockerfile: ./MediXpress_Backend_Services/MediXpress_Medicine_Service_Api/Dockerfile
+    depends_on: 
+        - SqlServer
+    port:
+    - "8002:5002"    
+    
+PharmacyService:
+    container_name: pharmacy_service_c
+    image: pharmacy_service_i
+    build: 
+        context: .
+        dockerfile: ./MediXpress_Backend_Services/MediXpress_Pharmacy_Service_Api/Dockerfile
+    depends_on: 
+        - SqlServer
+    port:
+    - "8003:5002"
+
+
+  OrdersService:
+    container_name: orders_service_c
+    image: orders_service_i
+    build: 
+        context: .
+        dockerfile: ./MediXpress_Backend_Services/MediXpress_Orders_Service_Api/Dockerfile
+    depends_on: 
+        - SqlServer
+    port:
+    - "8004:5002"
+
+  APIGateway:
+    container_name: gateway_service_c
+    image: gateway_service_i
+    build: 
+        context: .
+        dockerfile: ./MediXpress_Backend_Services/MediXpress_Backend_Services_Api_Gateway/Dockerfile
+    depends_on: 
+        - SqlServer
+    port:
+    - "8000:5002"
+
+
+
+
+  medixpress_UI:
+    build: 
+      context: .
+      dockerfile: ./medixpres_UI/Dockerfile
+    container_name: medixpressui_c
+    port:
+    - "5001:5002"
+
+  
+
+  

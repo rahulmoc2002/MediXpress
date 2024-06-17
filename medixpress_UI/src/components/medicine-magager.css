@@ -1,0 +1,137 @@
+/* seller-dashboard.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+.medicine-management {
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.medicine-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.medicine-form input, 
+.medicine-form select {
+    flex: 1 1 calc(33.333% - 1rem);
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.medicine-form input:focus, 
+.medicine-form select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.medicine-form button {
+    flex: 1 1 100%;
+    padding: 0.75rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.medicine-form button:hover {
+    background-color: #0056b3;
+}
+
+.medicine-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.medicine-table th,
+.medicine-table td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.medicine-table th {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.medicine-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.medicine-table tr:hover {
+    background-color: #ddd;
+}
+
+.medicine-table button {
+    padding: 0.5rem 1rem;
+    margin-right: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+}
+
+.medicine-table button[name="Available"] {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.medicine-table button[name="Available"]:hover {
+    background-color: #218838;
+}
+
+.medicine-table button[name="Sold Out"] {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.medicine-table button[name="Sold Out"]:hover {
+    background-color: #c82333;
+}
+
+.required {
+    color: red;
+    margin-left: 5px;
+}
+.form-row {
+    margin-bottom: 15px;
+}
+
+.form-row label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.medicine-form input, .medicine-form select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}

@@ -1,0 +1,113 @@
+.custom-navbar {
+  height: 100px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  border-top: 5px solid #613385;
+}
+
+.custom-navbar .navbar-brand img {
+  height: 100%;
+  max-height: 100px;
+}
+
+.custom-navbar .navbar-nav .nav-link {
+  line-height: 80px;
+}
+
+.address {
+  display: flex;
+  align-items: center;
+}
+
+.location-icon {
+  font-size: 1.2rem;
+  margin-right: 5px;
+}
+
+.custom-button {
+  color: Black;
+  height: 40px;
+  width: 100px;
+  display: inline-block;
+  text-align: center;
+  font-size: 16px;
+  border: 3px solid white;
+  padding: 5px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.custom-button:hover {
+  background-color: white;
+  color: black;
+}
+.logo-text {
+  font-family: 'Montserrat, sans-serif';
+  font-size: 1.6rem;
+  font-weight: 700;
+
+  color: linear-gradient(90deg, #ff6347, #4169e1, #ff6347, #4169e1, #ff6347);
+  background-size: 300% 100%;
+  animation: wave 10s linear infinite;
+  z-index: 0; 
+}
+
+.login-signup-button {
+  color: white;
+  background-color: #613385;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  height: 40px;
+  width: 140px;
+  display: inline-block;
+  text-align: center;
+  font-size: 16px;
+  border: 3px solid #9572b0;
+  padding: 5px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.login-signup-button:hover {
+  background-color: White;
+  color: #613385;
+}
+
+.thin-bar {
+  padding: 10px 0;
+  height: 68px;
+  background: linear-gradient(90deg, #ff6347, #4169e1, #ff6347, #4169e1, #ff6347);
+  background-size: 300% 100%;
+  animation: wave 10s linear infinite;
+  z-index: 0; 
+  color: white;
+  box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.3), 0px -10px 10px -5px rgba(0, 0, 0, 0.3);
+}
+
+.promo-code-text {
+  color: white;
+  padding: 2px;
+  border-radius: 10px;
+  font-size: 1.6rem;
+
+
+}
+
+.notification-text {
+  color: white;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.notification-icon {
+  font-size: 1.5rem;
+}
+
+.cart-text {
+  background-color: white;
+  color: black;
+  height: 40px;
+  width: 80px;
+  border-radius: 10px;
+  border: 3px solid #613385;
+}

@@ -1,0 +1,57 @@
+[
+    {
+      "id": 1,
+      "name": "Aspirin",
+      "description": "Used to reduce pain, fever, or inflammation.",
+      "image_url": "https://th.bing.com/th/id/OIP.ih6lPs46kqbrTsgnqOb-wQHaEm?rs=1&pid=ImgDetMain",
+      "mrp": "500",
+      "discounted_price":"400",
+      "discounted_percentage":"20%"
+    },
+    {
+      "id": 2,
+      "name": "Ibuprofen",
+      "description": "Nonsteroidal anti-inflammatory drug used for treating pain, fever, and inflammation.",
+      "image_url": "https://4.imimg.com/data4/GR/JD/MY-95289/ibu-200-2x10.jpg",
+      "mrp": "700",
+      "discounted_price":"560",
+      "discounted_percentage":"20%"
+    },
+    {
+      "id": 3,
+      "name": "Paracetamol",
+      "description": "Commonly used for relieving pain and reducing fever.",
+      "image_url": "https://th.bing.com/th/id/R.496b6159be56f6dd97dacd5167e7a531?rik=LMtsTor5Ny27sw&riu=http%3a%2f%2fimages-its.chemistdirect.co.uk%2fParacetamol-500mg-caplets-10456.jpg%3fo%3dwrwi2k9dA2Xo58Fh8cBcF%24swYG8j%26V%3dxCFy&ehk=0mMum8k8RtzYrsYL5gNaodlmEkw0MFoXtiry%2baMGIeI%3d&risl=&pid=ImgRaw&r=0",
+      "mrp": "120",
+      "discounted_price":"96",
+      "discounted_percentage":"20%"
+    },
+    {
+      "id": 4,
+      "name": "Amoxicillin",
+      "description": "An antibiotic used to treat a number of bacterial infections.",
+      "image_url": "https://5.imimg.com/data5/SELLER/Default/2020/12/HD/IF/ML/95289/amoxicillin-tablets-1000mg.jpeg",
+      "mrp": "240",
+      "discounted_price":"192",
+      "discounted_percentage":"20%"
+    },
+    {
+      "id": 5,
+      "name": "Metformin",
+      "description": "Used to treat type 2 diabetes.",
+      "image_url": "https://4.imimg.com/data4/KC/NY/MY-95289/metformin-tablets-bp-500-mg.jpg",
+      "mrp": "600",
+      "discounted_price":"480",
+      "discounted_percentage":"20%"
+    },
+    {
+      "id": 6,
+      "name": "Lisinopril",
+      "description": "Used to treat high blood pressure and heart failure.",
+      "image_url": "https://www.bbukltd.com/wp-content/uploads/2016/01/Lisinopril-20mg-Tabs-28s-2-Copy.jpg",
+      "mrp": "340",
+      "discounted_price":"272",
+      "discounted_percentage":"20%"
+    }
+  ]
+  

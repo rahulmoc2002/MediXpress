@@ -1,0 +1,187 @@
+ .search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  padding-top: 20px;
+}
+
+.search-bar {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  font-size: 16px;
+}
+
+.section-header {
+  text-align: center;
+  margin: 20px 0 0 0 ;
+}
+
+.section-header h2 {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: left; 
+  margin-bottom:0;
+  margin-left: 20px;
+}
+
+.card-container-wrapper {
+  position: relative;
+  padding: 0 20px; 
+  overflow: hidden;
+}
+
+.card-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 20px;
+  padding: 20px 0;
+  margin-top: 0px;
+}
+
+.card-container::-webkit-scrollbar {
+  display: none; 
+}
+
+.card-container {
+  -ms-overflow-style: none;  
+  scrollbar-width: none; 
+}
+
+.card-item {
+  flex: 0 0 19%;
+  max-width: 19%;
+}
+
+.card-custom {
+  position: relative; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 40px;
+  overflow: hidden;
+  transition: box-shadow 0.3s;
+  height: 350px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.card-custom::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(60% + (tan(20deg) * 50vw));
+  background-color: whitesmoke;
+}
+
+@keyframes wave {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 300% 0%;
+  }
+}
+
+.card-custom img {
+  width: 100%;
+  height: 150px; 
+  object-fit: cover;
+  margin: 4px;
+  z-index: 1; 
+}
+
+.card-custom .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px;
+  height: 290px;
+
+  z-index: 1; 
+}
+
+.card-custom .card-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+}
+
+.card-custom .card-text {
+  font-size: 12px;
+  color: black;
+}
+
+.price-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.mrp {
+  text-decoration: line-through;
+  color: black
+}
+
+.discounted-price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+}
+
+.discount-percentage {
+  color: red;
+  font-weight: bold;
+}
+
+.add-to-cart-button {
+  background-color: #613385;
+  border: none;
+  color: white;
+  width: 100%;
+  border-radius: 20px;
+  height: 40px;
+  background: linear-gradient(90deg, #ff6347, #4169e1, #ff6347, #4169e1, #ff6347);
+  background-size: 300% 100%;
+  animation: wave 10s linear infinite;
+  z-index: 0; 
+}
+
+.card-custom:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.scroll-button {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #613385;
+  border: none;
+  color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.message {
+  position: fixed;
+  top: 10%;
+  right: 10%;
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  transition: opacity 0.5s ease;
+}
+ 

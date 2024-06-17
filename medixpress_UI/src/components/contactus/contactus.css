@@ -1,0 +1,33 @@
+/* src/components/ContactUs.css */
+
+.contact-us-container {
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
+}
+
+.contact-us-heading {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #613385;
+  margin-bottom: 1.5rem;
+}
+
+.company-info {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  color: #333;
+}
+
+.custom-submit-button {
+  background-color: #613385;
+  border: none;
+  font-weight: bold;
+}
+
+.custom-submit-button:hover {
+  background-color: #502e68;
+}

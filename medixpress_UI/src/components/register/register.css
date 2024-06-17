@@ -1,0 +1,59 @@
+.mt-5 {
+    margin-top: 5rem;
+}
+
+.logo-text {
+    font-family: 'Montserrat, sans-serif';
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #613385;
+}
+
+.form-control {
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+}
+
+.text-danger {
+    color: red;
+}
+
+.btn-primary {
+    width: 100%;
+    padding: 10px;
+    background-color: #613385;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 20px;
+    margin-bottom: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #4e0e7f;
+}
+
+.register-link {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #5f6368;
+}
+
+.register-link a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+.required {
+    color: red;
+    margin-left: 5px;
+}

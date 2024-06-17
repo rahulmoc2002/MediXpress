@@ -1,0 +1,6 @@
+@MediXpress_Medicine_Service_Api_HostAddress = http://localhost:5135
+
+GET {{MediXpress_Medicine_Service_Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

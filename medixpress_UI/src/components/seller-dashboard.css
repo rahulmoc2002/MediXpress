@@ -1,0 +1,63 @@
+
+
+
+
+.banner {
+    margin: 20px; 
+    position: relative;
+    width: calc(100% - 40px); 
+    height: 500px; 
+    background-image: url('https://img.pikbest.com/wp/202405/purpose-of-pharmaceutical-manufacturing-for-medicinal-purposes-3d-rendering-drugs-on-a-blue-backdrop_9827629.jpg!sw800'); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    justify-content: center; 
+    text-align: left; 
+    padding: 20px;
+    color: white;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.banner-text-seller {
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 0.15em solid white; 
+    animation: typing 3.5s steps(30, end), blink-caret 0.75s step-end 3.5s infinite; 
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: white; }
+}
+
+
+.banner-button {
+    margin-top: 20px; 
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.banner-button:hover {
+    background-color: #218838;
+}
+
+.banner-button:not(:hover) {
+    animation: none; 
+}
